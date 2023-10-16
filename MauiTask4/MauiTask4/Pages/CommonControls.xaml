@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTask4.Pages.CommonControls"
+             Title="CommonControls"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BackgroundColor="AliceBlue" Margin="10">
+                <VerticalStackLayout>
+                    <Image Source="coding_droplets.png" HeightRequest="100"/>
+                    <Label Text="Coding Droplets"
+                           FontSize="28" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="10"
+                           TextColor="Black"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="White" Margin="10">
+                <Border Padding="10" StrokeThickness="5" Stroke="red" BackgroundColor="White">
+                    <Label Text="Welcome" HorizontalOptions="Center"/>
+                </Border>
+            </Frame>
+
+            <WebView Source="https://github.com/BarryHennett"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTask4.Pages.MainPage"
+             Title="MainPage"
+             BackgroundColor="White">
+
+    <FlexLayout Direction="Column">
+        <VerticalStackLayout FlexLayout.Grow="1" Padding="20" Spacing="10" VerticalOptions="End">
+            <Button x:Name="commonControlsButton" BackgroundColor="gold" Text="Common Controls" TextColor="Black" Clicked="commonControlsButton_Clicked" />
+            <Button x:Name="actionControlsButton" BackgroundColor="gold" Text="Action Controls" TextColor="Black" Clicked="actionControlsButton_Clicked" />
+            <Button x:Name="inputControlsButton" BackgroundColor="gold" Text="Input Controls" TextColor="Black" Clicked="inputControlsButton_Clicked" />
+            <Button x:Name="indicatorControlsButton" BackgroundColor="gold" Text="Indicator Controls" TextColor="Black" Clicked="indicatorControlsButton_Clicked" />
+            <Button x:Name="drawingControlsButton" BackgroundColor="gold" Text="Drawing Controls" TextColor="Black" Clicked="drawingControlsButton_Clicked" />
+        </VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="#181C3F" Padding="10">
+            <Label Text="MelvinKV" 
+               TextColor="Black" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </FlexLayout>
+</ContentPage>

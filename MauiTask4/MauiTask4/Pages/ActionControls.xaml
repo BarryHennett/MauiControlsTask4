@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTask4.Pages.ActionControls"
+             Title="ActionControls"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout >
+            <Frame BackgroundColor="White" Margin="10">
+                <Button x:Name="demoButton" BackgroundColor="Red" Text="Click Me" Clicked="demoButton_Clicked"/>
+            </Frame>
+            <Frame BackgroundColor="Grey" Margin="10">
+                <ImageButton x:Name="demoImageButton" Source="download_button.png" Clicked="demoImageButton_Clicked" HeightRequest="50"/>
+            </Frame>
+
+            <Frame BackgroundColor="White" Margin="10">
+                <SearchBar x:Name="demoSearchBar" SearchButtonPressed="demoSearchBar_SearchButtonPressed"/>
+            </Frame>
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItem x:Name="facebookSwipeItem"
+                               BackgroundColor="LightBlue"
+                               IconImageSource="facebook.png"
+                               Invoked="facebookSwipeItem_Invoked"/>
+                    
+                    <SwipeItem x:Name="instagramSwipeItem"
+                               BackgroundColor="LightBlue"
+                               IconImageSource="instagram.png"
+                               Invoked="instagramSwipeItem_Invoked"/>
+                </SwipeView.LeftItems>
+
+                <SwipeView.RightItems>
+                    <SwipeItem  x:Name="twitterSwipeItem"
+                               BackgroundColor="LightBlue"
+                               IconImageSource="twitter.png"
+                               Invoked="twitterSwipeItem_Invoked"/>
+                    
+                    <SwipeItem x:Name="linkedinSwipeItem"
+                               BackgroundColor="LightBlue"
+                               IconImageSource="linkedin.png"
+                               Invoked="linkedinSwipeItem_Invoked"/>
+                </SwipeView.RightItems>
+
+
+                <VerticalStackLayout>
+                    <Label Text="This is a Swipe View"
+                           BackgroundColor="Gray"
+                           Padding="15"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </SwipeView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

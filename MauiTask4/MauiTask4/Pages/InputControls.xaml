@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTask4.Pages.InputControls"
+             Title="InputControls"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Frame BackgroundColor="gray">
+                <Entry Placeholder="Enter Text Here" PlaceholderColor="Red"/>
+            </Frame>
+
+            <Frame BackgroundColor="gray">
+                <Editor Placeholder="Editor" AutoSize="TextChanges"/>
+            </Frame>
+
+            <Frame BackgroundColor="gray">
+                <HorizontalStackLayout>
+                    <CheckBox />
+                    <Label Text="Checkbox 01" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="gray">
+                <VerticalStackLayout>
+                    <RadioButton GroupName="Group1" Content="Option 1"/>
+                    <RadioButton GroupName="Group1" Content="Option 2"/>
+                    <RadioButton GroupName="Group2" Content="Option 3"/>
+                    <RadioButton GroupName="Group2" Content="Option 4"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="gray">
+                <VerticalStackLayout>
+                    <Slider Minimum="1" Maximum="100" ValueChanged="Slider_ValueChanged"/>
+                    <Label x:Name="sliderValueLabel" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
