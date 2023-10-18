@@ -11,4 +11,9 @@ public partial class InputControls : ContentPage
     {
         sliderValueLabel.Text = e.NewValue.ToString();
     }
+
+    private void Stepper_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        DisplayAlert("Stepper Value", $"Value: {e.NewValue}", "OK");
+    }
 }

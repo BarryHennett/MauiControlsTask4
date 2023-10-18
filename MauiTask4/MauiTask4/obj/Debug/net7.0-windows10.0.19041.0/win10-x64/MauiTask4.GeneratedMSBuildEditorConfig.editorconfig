@@ -28,6 +28,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiTask4.Pages.CommonCont
 build_metadata.AdditionalFiles.TargetPath = Pages\CommonControls.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CommonControls.xaml
 
+[C:/Users/harra/Desktop/Term 4/MauiControlsTask4/MauiTask4/MauiTask4/Pages/DrawingControls.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiTask4.Pages.DrawingControls.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DrawingControls.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DrawingControls.xaml
+
+[C:/Users/harra/Desktop/Term 4/MauiControlsTask4/MauiTask4/MauiTask4/Pages/IndicatorControls.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiTask4.Pages.IndicatorControls.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\IndicatorControls.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\IndicatorControls.xaml
+
 [C:/Users/harra/Desktop/Term 4/MauiControlsTask4/MauiTask4/MauiTask4/Pages/InputControls.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiTask4.Pages.InputControls.xaml

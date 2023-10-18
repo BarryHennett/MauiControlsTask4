@@ -32,9 +32,33 @@
 
             <Frame BackgroundColor="gray">
                 <VerticalStackLayout>
-                    <Slider Minimum="1" Maximum="100" ValueChanged="Slider_ValueChanged"/>
+                    <Slider Minimum="1" Maximum="100" ValueChanged="Slider_ValueChanged"                            
+                            MaximumTrackColor="Red"
+                            MinimumTrackColor="Black"
+                            ThumbColor="Green"
+                            ThumbImageSource="diamond.png"/>
                     <Label x:Name="sliderValueLabel" HorizontalOptions="Center"/>
                 </VerticalStackLayout>
+            </Frame>
+
+
+            <Frame BackgroundColor="#EAEEFA">
+                <Stepper HorizontalOptions="Center" ValueChanged="Stepper_ValueChanged"
+                         Maximum="20"
+                         Minimum="4"
+                         Increment="2"/>
+            </Frame>
+
+            <Frame BackgroundColor="#EAEEFA">
+                <Switch HorizontalOptions="Center" />
+            </Frame>
+
+            <Frame BackgroundColor="#EAEEFA">
+                <DatePicker />
+            </Frame>
+
+            <Frame BackgroundColor="#EAEEFA">
+                <TimePicker />
             </Frame>
         </VerticalStackLayout>
     </ScrollView>
